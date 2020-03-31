@@ -1,14 +1,14 @@
-import { parse, print, printSchema } from 'graphql';
-import { ApolloServer, makeExecutableSchema, mergeSchemas } from 'apollo-server';
-import {
+const{ parse, print, printSchema } = require('graphql');
+const { ApolloServer, makeExecutableSchema, mergeSchemas } = require('apollo-server');
+const {
   neo4jIDL,
   neo4jAssertConstraints,
   neo4jGraphQLBinding,
   buildNeo4jTypeDefs,
   buildNeo4jResolvers
-} from 'neo4j-graphql-binding';
+} = require('neo4j-graphql-binding');
 
-export const Neo4jGraphQLServer = ({
+module.exports =  Neo4jGraphQLServer = ({
   bindingKey="neo4j",
   typeDefs,
   context={},
