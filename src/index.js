@@ -8,7 +8,7 @@ const {
   buildNeo4jResolvers
 } = require('neo4j-graphql-binding');
 
-module.exports =  Neo4jGraphQLServer = ({
+exports.Neo4jGraphQLServer = ({
   bindingKey="neo4j",
   typeDefs,
   context={},
