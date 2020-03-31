@@ -25,5 +25,5 @@
     "apollo-server": "^2.0.0-beta.3",
     "graphql": "^0.13.2",
     "neo4j-graphql-binding": "https://github.com/vishal-android-freak/neo4j-graphql-binding#patch-1"
-  },
+  }
 }
